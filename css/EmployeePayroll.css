@@ -153,6 +153,11 @@ button:hover{
     color: #ffffff;
 }
 
+button:disabled{
+    background-color: #ffffff;
+    color: #cccccc;
+}
+
 .submitButton{
     border: 1px solid #707070;
     background-color: #f5f5f5;
@@ -169,10 +174,17 @@ button:hover{
     color: #ffffff;
 }
 
+.input-error{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 error-output{
     font-size: 12px;
     font-style: italic;
     color: red;
+    height: 10px;
 }
 
 @media only screen and (max-width: 960px){
@@ -192,6 +204,9 @@ error-output{
     .row{
         flex-direction: column;
     }
+    .row-content{
+        display: block;
+    }
     .profile-radio-content{
         flex-flow: wrap;
     }
@@ -209,6 +224,24 @@ error-output{
     .buttonParent{
         flex-direction: column-reverse;
         align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    select{
+        display: flex;
+        margin-bottom: 5px;
+    }
+    .buttonParent{
+        align-items: center;
+    }
+    .submit-reset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .submitButton{
+        margin-bottom: 10px;
     }
 }
 
