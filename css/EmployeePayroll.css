@@ -185,6 +185,7 @@ error-output{
     font-style: italic;
     color: red;
     height: 10px;
+    padding-top: 3px;
 }
 
 @media only screen and (max-width: 960px){
