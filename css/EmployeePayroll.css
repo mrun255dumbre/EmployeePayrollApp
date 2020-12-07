@@ -75,6 +75,11 @@ body{
     border: 0px solid #82a70c;
 }
 
+.row-content > .checkboxDiv {
+    display: flex;
+    flex-direction: row;
+}
+
 .label{
     min-width: 140px;
 }
@@ -207,6 +212,10 @@ error-output{
     }
     .row-content{
         display: block;
+    }
+    .checkboxDiv > div{
+        display: flex;
+        flex-direction: column;
     }
     .profile-radio-content{
         flex-flow: wrap;
