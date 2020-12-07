@@ -45,6 +45,14 @@ class EmployeePayrollData {
         return this._department;
     }
 
+    set salary(salary){ 
+        this._salary = salary;
+    }
+
+    get salary(){ 
+        return this._salary;
+    }
+
     set startDate(startDate){ 
         this._startDate = startDate;
     }
