@@ -52,6 +52,7 @@ body{
     outline: none;
     cursor: pointer;
     text-decoration: none;
+    display: flex;
 }
 
 .main-content{
@@ -78,6 +79,7 @@ body{
     letter-spacing: 0px;
     color: #42515f;
     opacity: 1;
+    display: flex;
 }
 
 .emp-count{
@@ -88,6 +90,7 @@ body{
     width: 26px;
     text-align: center;
     display: inline-block;
+    margin-left: 5px;
 }
 
 .table-main{
@@ -103,15 +106,15 @@ body{
 }
 
 td, th{
-    text-align: left;
+    text-align: center;
     padding: 5px 8px;
 }
 
 th{
     background: #42515f 0% 0% no-repeat padding-box;
     border-radius: 3px 3px 0px 0px;
-    text-align: left;
-    font: normal normal medium 18px/24px Roboto;
+    text-align: center;
+    font: normal normal normal 18px/24px Roboto;
     letter-spacing: 0px;
     color: #ffffff;
     text-transform: uppercase;
@@ -133,7 +136,7 @@ td{
 }
 
 td:first-child{
-    display: flex;
+    display: block;
     align-items: center;
 }
 
@@ -155,4 +158,55 @@ td img{
     display: inline-block;
     font-weight: 300;
     margin-bottom: 8px;
+    margin-right: 2px;
+}
+
+@media only screen and (max-width: 420px){
+    .add-button{
+        font: normal normal normal 16px/23px Roboto;
+        padding: 3px 10px;
+    }
+    .header-content {
+        width: auto;
+        padding-bottom: 20px;
+    }
+    .logo-content{
+        width: 50%;
+    }
+    .emp-text {
+        font-size: 18px;
+    }    
+    .emp-detail-text{
+        font: normal normal bold 20px/21px Roboto;
+        padding-right: 10px;
+    }
+    .table-main{
+        overflow-x:auto;
+    }
+    th{
+        font: normal normal normal 14px/20px Roboto;
+    }
+    td{
+        font: normal normal normal 12px/19px Roboto;
+    }
+    .dept-label{
+        font-size: 12px;
+        margin-right: 2px;
+    }
+    .header{
+        padding-left: 20px;
+    }
+}    
+
+@media only screen and (min-width: 421px) and (max-width: 800px){
+    .add-button{
+        font-size: 18px;
+        padding: 3px 10px;
+    }
+    .emp-detail-text{
+        font-size: 22px;
+    }
+    th{
+        font-size: 16px;
+    }
 }

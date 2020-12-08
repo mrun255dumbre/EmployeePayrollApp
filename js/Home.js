@@ -12,7 +12,7 @@ const getEmployeePayrollDataFromStorage = () => {
 }
 
 const createInnerHtml = () => {
-    const headerHtml = "<th></th><th>Name</th><th>Gender</th><th>Department</th>"+
+    const headerHtml = "<th>Profile</th><th>Name</th><th>Gender</th><th>Department</th>"+
                        "<th>Salary</th><th>Start Date</th><th>Actions</th>";
     if(employeePayrollList.length == 0) return;
     let innerHtml = `${headerHtml}`;                   
@@ -26,7 +26,7 @@ const createInnerHtml = () => {
                 <td>${employeePayrollData._gender}</td>
                 <td>${getDeptHtml(employeePayrollData._department)}</td>
                 <td>${employeePayrollData._salary}</td>
-                <td>${employeePayrollData._startDate}</td>
+                <td>${stringifyDate(employeePayrollData._startDate)}</td>
                 <td>
                     <img name="${employeePayrollData._id}" onclick="remove(this)" alt="delete" src="../assets/icons/delete-black-18dp.svg">
                     <img name="${employeePayrollData._id}" onclick="update(this)" alt="edit" src="../assets/icons/create-black-18dp.svg">
