@@ -50,6 +50,7 @@ const createEmployeePayroll = () => {
     } catch(exception){
         setTextValue('.name-error', exception);
     }
+    employeePayrollData.id = createNewId();
     employeePayrollData.profilePic = getSelectedValues('[name=profile]').pop();
     employeePayrollData.gender = getSelectedValues('[name=gender]').pop();
     employeePayrollData.department = getSelectedValues('[name=department]');
@@ -78,3 +79,10 @@ const getInputElementValue = (id) => {
     let value = document.getElementById(id).value;
     return value;
 }
+
+const createNewId = () => {
+    let empId = localStorage.getItem("EmployeeID");
+    empId = !empId ? 1 : (parseInt(empId) + 1).toString();
+    localStorage.setItem("EmployeeID", empId);
+    return empId;
+};
