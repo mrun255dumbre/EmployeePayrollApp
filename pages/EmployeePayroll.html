@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../css/EmployeePayroll.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Employee Payroll form</title>
+    <script src="../js/Home.js"></script>
+    <script src="../js/Utility.js"></script>
+    <script src="../js/site_properties.js"></script>
 </head>
 <body>
     <header class="header-content header">
@@ -81,7 +84,7 @@
             </div>
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date</label>
-                <div>
+                <div id = "startDate">
                     <select id="day" name="day">
                         <option>Day</option>
                         <option value="1">1</option>
@@ -141,7 +144,9 @@
                         <option value="2015">2015</option>
                     </select>        
                 </div>
+                <error-output class = "date-error" for = "text"> </error-output>
             </div>
+            
             <div class="row-content">
                 <label class="label text" for="notes">Notes</label>
                 <textarea id="notes" class="input" name="notes" style="height: 100px;"></textarea>
