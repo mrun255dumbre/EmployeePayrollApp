@@ -10,7 +10,7 @@
       ],
       "_salary": "10000",
       "_startDate": "29 Oct 2019",
-      "_note": "Hello",
+      "_notes": "Hello",
       "_profilePic": "../assets/profile-images/Ellipse -3.png"
     },
     {
@@ -23,7 +23,7 @@
       ],
       "_salary": "5000",
       "_startDate": "10 Nov 2019",
-      "_note": "Hey",
+      "_notes": "Hey",
       "_profilePic": "../assets/profile-images/Ellipse -3.png"
     },
     {
@@ -36,7 +36,7 @@
       ],
       "_salary": "8000",
       "_startDate": "29 Oct 2019",
-      "_note": "Hi",
+      "_notes": "Hi",
       "_profilePic": "../assets/profile-images/Ellipse 1.png"
     },
     {
@@ -46,11 +46,24 @@
         "Sales",
         "Engineer"
       ],
-      "_salary": "9500",
-      "_startDate": "29 Oct 2019",
-      "_note": "Heyy",
-      "_profilePic": "../assets/profile-images/Ellipse -2.png",
+      "_salary": "386400",
+      "_startDate": "2019-10-28T18:30:00.000Z",
+      "_notes": "Heyy",
+      "_profilePic": "../assets/profile-images/Ellipse -8.png",
       "id": 4
+    },
+    {
+      "_name": "Mrunalini",
+      "_profilePic": "../assets/profile-images/Ellipse -7.png",
+      "_gender": "Female",
+      "_department": [
+        "Engineer",
+        "Others"
+      ],
+      "_salary": "500000",
+      "_notes": "I am Engineer",
+      "_startDate": "2018-05-15T18:30:00.000Z",
+      "id": 5
     }
   ]
 }
