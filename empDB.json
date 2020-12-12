@@ -51,19 +51,6 @@
       "_notes": "Heyy",
       "_profilePic": "../assets/profile-images/Ellipse -8.png",
       "id": 4
-    },
-    {
-      "_name": "Mrunalini",
-      "_profilePic": "../assets/profile-images/Ellipse -7.png",
-      "_gender": "Female",
-      "_department": [
-        "Engineer",
-        "Others"
-      ],
-      "_salary": "500000",
-      "_notes": "I am Engineer",
-      "_startDate": "2018-05-15T18:30:00.000Z",
-      "id": 5
     }
   ]
 }
